@@ -30,16 +30,20 @@ public class DesasignarArmaaUnidad {
         this.vciudad = vciudad;
     }
 
-    public void CUDesasignarArmaaUnidad() throws SQLException {
-        if (this.vciudad.getCiudad().getCiudadejercito().verificarcantidadasignamientoarma( this.unidadmilitar, this.arma, this.cantidad)) {
-            this.vciudad.getCiudad().getCiudadejercito().descontararmasunidadmilitar( this.unidadmilitar, this.arma, this.cantidad);
-            this.vciudad.getCiudad().getCiudadejercito().aumentarunidadesinarma( this.unidadmilitar, this.cantidad);
-            this.vciudad.getCiudad().getCiudadejercito().inicializarejercitodeciudad();
+    public void CUDesasignarArmaaUnidad() {
+        try {
+            if (this.vciudad.getCiudad().getCiudadejercito().verificarcantidadasignamientoarma( this.unidadmilitar, this.arma, this.cantidad)) {
+                this.vciudad.getCiudad().getCiudadejercito().descontararmasunidadmilitar( this.unidadmilitar, this.arma, this.cantidad);
+                this.vciudad.getCiudad().getCiudadejercito().aumentarunidadesinarma( this.unidadmilitar, this.cantidad);
+                this.vciudad.getCiudad().getCiudadejercito().inicializarejercitodeciudad();
 
-            JOptionPane.showMessageDialog(vciudad, "Las armas fueron eliminadas.");
-        } else {
-            JOptionPane.showMessageDialog(vciudad, "No dispone de " + this.cantidad + " unidades de " + this.unidadmilitar.getNombre() + " que tengan el arma " + this.arma.getNombrearma());
+                JOptionPane.showMessageDialog(vciudad, "Las armas fueron eliminadas.");
+            } else {
+                JOptionPane.showMessageDialog(vciudad, "No dispone de " + this.cantidad + " unidades de " + this.unidadmilitar.getNombre() + " que tengan el arma " + this.arma.getNombrearma());
 
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 

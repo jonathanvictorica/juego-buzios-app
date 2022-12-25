@@ -11,29 +11,18 @@
 	<groupId>com.jmg</groupId>
 	<artifactId>buzios-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--		</dependency>-->
-		<!-- https://mvnrepository.com/artifact/org.netbeans.external/AbsoluteLayout -->
-<!--		<dependency>-->
-<!--			<groupId>org.netbeans.external</groupId>-->
-<!--			<artifactId>AbsoluteLayout</artifactId>-->
-<!--			<version>RELEASE65</version>-->
-<!--		</dependency>-->
-
-
-<!--		<dependency>-->
-<!--			<groupId>com.mysql</groupId>-->
-<!--			<artifactId>mysql-connector-j</artifactId>-->
-<!--			<scope>runtime</scope>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -44,30 +33,26 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>edisoncorSX</groupId>
 			<artifactId>edisoncorSX</artifactId>
-			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/edisoncorSX.jar</systemPath>
-		</dependency>
-
-		<dependency>
-			<groupId>mysql-connector-java</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/mysql-connector-java-5.1.18-bin.jar</systemPath>
+			<version>1</version>
+			<systemPath>${basedir}/src/main/resources/lib/edisoncorSX.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>AbsoluteLayout</groupId>
 			<artifactId>AbsoluteLayout</artifactId>
-			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/AbsoluteLayout.jar</systemPath>
+			<version>1</version>
+			<systemPath>${basedir}/src/main/resources/lib/AbsoluteLayout.jar</systemPath>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot</artifactId>
@@ -80,18 +65,37 @@
 
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>in-project</id>
+			<name>In Project Repo</name>
+			<url>file://${project.basedir}/src/main/resources/lib</url>
+		</repository>
+	</repositories>
+
 	<build>
+		<finalName>buzios-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 				<configuration>
+					<includeSystemScope>true</includeSystemScope>
+
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+
 				</configuration>
 			</plugin>
 		</plugins>

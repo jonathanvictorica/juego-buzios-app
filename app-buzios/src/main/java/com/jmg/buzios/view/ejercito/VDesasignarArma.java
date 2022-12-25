@@ -473,49 +473,40 @@ public class VDesasignarArma extends javax.swing.JFrame {
 
     private void cmdDesasignararmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdDesasignararmaActionPerformed
         if (!"".equals(this.txtCantidadadesasignar.getText())) {
-            try {
-                DesasignarArmaaUnidad desasignar = new DesasignarArmaaUnidad(this.unidadmilitar, this.armas.get(0), Integer.parseInt(this.txtCantidadadesasignar.getText()), this.ciudadjugador);
+               DesasignarArmaaUnidad desasignar = new DesasignarArmaaUnidad(this.unidadmilitar, this.armas.get(0), Integer.parseInt(this.txtCantidadadesasignar.getText()), this.ciudadjugador);
                 desasignar.CUDesasignarArmaaUnidad();
                 this.hide();
-            } catch (SQLException ex) {
-                BuziosApp.mensajeerror();
-            }
+
         }
     }//GEN-LAST:event_cmdDesasignararmaActionPerformed
 
     private void cmdDesasignararma1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdDesasignararma1ActionPerformed
         if (!"".equals(this.txtCantidadadesasignar1.getText())) {
-            try {
+
                 DesasignarArmaaUnidad desasignar = new DesasignarArmaaUnidad(this.unidadmilitar, this.armas.get(1), Integer.parseInt(this.txtCantidadadesasignar1.getText()), this.ciudadjugador);
                 desasignar.CUDesasignarArmaaUnidad();
                 this.hide();
-            } catch (SQLException ex) {
-                BuziosApp.mensajeerror();
-            }
+
         }
     }//GEN-LAST:event_cmdDesasignararma1ActionPerformed
 
     private void cmdDesasignararma2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdDesasignararma2ActionPerformed
         if (!"".equals(this.txtCantidadadesasignar2.getText())) {
-            try {
+
                 DesasignarArmaaUnidad desasignar = new DesasignarArmaaUnidad(this.unidadmilitar, this.armas.get(2), Integer.parseInt(this.txtCantidadadesasignar2.getText()), this.ciudadjugador);
                 desasignar.CUDesasignarArmaaUnidad();
                 this.hide();
-            } catch (SQLException ex) {
-                BuziosApp.mensajeerror();
-            }
+
         }
     }//GEN-LAST:event_cmdDesasignararma2ActionPerformed
 
     private void cmdDesasignararma3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdDesasignararma3ActionPerformed
         if (!"".equals(this.txtCantidadadesasignar3.getText())) {
-            try {
+
                 DesasignarArmaaUnidad desasignar = new DesasignarArmaaUnidad(this.unidadmilitar, this.armas.get(3), Integer.parseInt(this.txtCantidadadesasignar3.getText()), this.ciudadjugador);
                 desasignar.CUDesasignarArmaaUnidad();
                 this.hide();
-            } catch (SQLException ex) {
-                BuziosApp.mensajeerror();
-            }
+
         }
     }//GEN-LAST:event_cmdDesasignararma3ActionPerformed
     // End of variables declaration//GEN-END:variables

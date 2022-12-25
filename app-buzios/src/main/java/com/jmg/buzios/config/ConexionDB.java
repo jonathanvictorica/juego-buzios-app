@@ -24,9 +24,9 @@ public class ConexionDB {
     private ConexionDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String servidor = "jdbc:mysql://localhost/proynuevo";
+            String servidor = "jdbc:mysql://localhost:3306/appbuzios";
             String usuarioDB = "root";
-            String passwordDB = "";
+            String passwordDB = "pwd-root";
 
             conexion = (java.sql.Connection) DriverManager.getConnection(servidor, usuarioDB, passwordDB);
 

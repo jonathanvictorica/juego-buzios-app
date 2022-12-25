@@ -52,24 +52,27 @@ public class ConstruirEdificio implements Actualizar {
             if (this.ciudadjugador.getCiudadrecurso().verificarrecursosciudad(edificionivel.getEdificiorecurso().getRecurso(), edificionivel.getEdificiorecurso().getCantidad())) {
                 if (ciudadjugador.getJugador().verificaroro(this.edificionivel.getEdificio().getCosto())) {
                     ConstruirEdificioThread construiredificio = new ConstruirEdificioThread(1, this.ciudadjugador, this.edificionivel, lugarciudad);
-                    Thread hconstruiredificio = new Thread(construiredificio);
-                    hconstruiredificio.start();
+//                    Thread hconstruiredificio = new Thread(construiredificio);
+//                    hconstruiredificio.start();
 
                     ConstruirEdificioThread descontarrecursos = new ConstruirEdificioThread(2, this.ciudadjugador, this.edificionivel);
-                    Thread hdescontarrecursos = new Thread(descontarrecursos);
-                    hdescontarrecursos.start();
+//                    Thread hdescontarrecursos = new Thread(descontarrecursos);
+//                    hdescontarrecursos.start();
 
                     ConstruirEdificioThread pagaroro = new ConstruirEdificioThread( 3, this.ciudadjugador, this.edificionivel);
-                    Thread hpagaroro = new Thread(pagaroro);
-                    hpagaroro.start();
+//                    Thread hpagaroro = new Thread(pagaroro);
+//                    hpagaroro.start();
 
-                    while (hconstruiredificio.isAlive() || hdescontarrecursos.isAlive() || hpagaroro.isAlive()) {
-                        if ((hconstruiredificio.isInterrupted()) || (hconstruiredificio.isInterrupted()) || (hpagaroro.isInterrupted())) {
-                            JOptionPane.showMessageDialog(null, "Lo sentimos pero la operacion no pudo ser realizada");
-
-                            return;
-                        }
-                    }
+                    construiredificio.run();
+                    descontarrecursos.run();
+                    pagaroro.run();
+//                    while (hconstruiredificio.isAlive() || hdescontarrecursos.isAlive() || hpagaroro.isAlive()) {
+//                        if ((hconstruiredificio.isInterrupted()) || (hconstruiredificio.isInterrupted()) || (hpagaroro.isInterrupted())) {
+//                            JOptionPane.showMessageDialog(null, "Lo sentimos pero la operacion no pudo ser realizada");
+//
+//                            return;
+//                        }
+//                    }
                     this.ciudadjugador.getCiudadedificios().inicializaredificiosdeciudad();
                     this.ciudadjugador.getCiudadrecurso().inicializarrecursosciudad();
 

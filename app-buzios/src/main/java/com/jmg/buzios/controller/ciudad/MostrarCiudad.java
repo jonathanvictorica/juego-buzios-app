@@ -49,41 +49,50 @@ public class MostrarCiudad implements Actualizar {
 
         this.ciudadjugador.getIsla().inicializar_isla();
 
-        MostrarCiudadThread inicializaracademia = new MostrarCiudadThread(ciudadjugador, 1 );
-        Thread iniciaracademia = new Thread(inicializaracademia);
-        iniciaracademia.start();
+//        MostrarCiudadThread inicializaracademia = new MostrarCiudadThread(ciudadjugador, 1 );
+//        Thread iniciaracademia = new Thread(inicializaracademia);
+//        iniciaracademia.start();
+       new  MostrarCiudadThread(ciudadjugador, 1 ).run();
 
-        MostrarCiudadThread inicializarciudadesdejugador = new MostrarCiudadThread(ciudadjugador, 8 );
-        Thread hinicializarciudadesdejugador = new Thread(inicializarciudadesdejugador);
-        hinicializarciudadesdejugador.start();
+//        MostrarCiudadThread inicializarciudadesdejugador = new MostrarCiudadThread(ciudadjugador, 8 );
+//        Thread hinicializarciudadesdejugador = new Thread(inicializarciudadesdejugador);
+//        hinicializarciudadesdejugador.start();
+        new MostrarCiudadThread(ciudadjugador, 8 ).run();
 
-        MostrarCiudadThread inicializaredificios = new MostrarCiudadThread(ciudadjugador, 2 );
-        Thread iniciaredificios = new Thread(inicializaredificios);
-        inicializaredificios.start();
+//        MostrarCiudadThread inicializaredificios = new MostrarCiudadThread(ciudadjugador, 2 );
+//        Thread iniciaredificios = new Thread(inicializaredificios);
+//        inicializaredificios.start();
+        new MostrarCiudadThread(ciudadjugador, 2 ).run();
 
-        MostrarCiudadThread inicializarproduccion = new MostrarCiudadThread(ciudadjugador, 3 );
-        Thread iniciarproduccion = new Thread(inicializarproduccion);
-        iniciarproduccion.start();
+//        MostrarCiudadThread inicializarproduccion = new MostrarCiudadThread(ciudadjugador, 3 );
+//        Thread iniciarproduccion = new Thread(inicializarproduccion);
+//        iniciarproduccion.start();
+        new MostrarCiudadThread(ciudadjugador, 3 ).run();
 
-        MostrarCiudadThread inicializarrecurso = new MostrarCiudadThread(ciudadjugador, 4 );
-        Thread iniciarrecurso = new Thread(inicializarrecurso);
-        iniciarrecurso.start();
+//        MostrarCiudadThread inicializarrecurso = new MostrarCiudadThread(ciudadjugador, 4 );
+//        Thread iniciarrecurso = new Thread(inicializarrecurso);
+//        iniciarrecurso.start();
+        new MostrarCiudadThread(ciudadjugador, 4 ).run();
 
-        MostrarCiudadThread inicializarejercito = new MostrarCiudadThread(ciudadjugador, 5 );
-        Thread iniciarejercito = new Thread(inicializarejercito);
-        iniciarejercito.start();
+//        MostrarCiudadThread inicializarejercito = new MostrarCiudadThread(ciudadjugador, 5 );
+//        Thread iniciarejercito = new Thread(inicializarejercito);
+//        iniciarejercito.start();
+        new MostrarCiudadThread(ciudadjugador, 5 ).run();
 
-        MostrarCiudadThread inicializarestado = new MostrarCiudadThread(ciudadjugador, 6 );
-        Thread iniciarestado = new Thread(inicializarestado);
-        iniciarestado.start();
+//        MostrarCiudadThread inicializarestado = new MostrarCiudadThread(ciudadjugador, 6 );
+//        Thread iniciarestado = new Thread(inicializarestado);
+//        iniciarestado.start();
+        new MostrarCiudadThread(ciudadjugador, 6 ).run();
 
-        MostrarCiudadThread inicializarbarcos = new MostrarCiudadThread(ciudadjugador, 7 );
-        Thread iniciarbarco = new Thread(inicializarbarcos);
-        iniciarbarco.start();
+//        MostrarCiudadThread inicializarbarcos = new MostrarCiudadThread(ciudadjugador, 7 );
+//        Thread iniciarbarco = new Thread(inicializarbarcos);
+//        iniciarbarco.start();
 
-        while (iniciarbarco.isAlive() || iniciaracademia.isAlive() || iniciaredificios.isAlive() || iniciarproduccion.isAlive() || iniciarrecurso.isAlive() || iniciarejercito.isAlive() || iniciarestado.isAlive()) {
+        new MostrarCiudadThread(ciudadjugador, 7 ).run();
 
-        }
+//        while (iniciarbarco.isAlive() || iniciaracademia.isAlive() || iniciaredificios.isAlive() || iniciarproduccion.isAlive() || iniciarrecurso.isAlive() || iniciarejercito.isAlive() || iniciarestado.isAlive()) {
+//
+//        }
         this.vciudad = new VCiudad(this.ciudadjugador);
         this.actualizarinterfazgrafica();
         this.actualizardatospantalla();

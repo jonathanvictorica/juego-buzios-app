@@ -3,10 +3,10 @@ Proyecto
 
 ## Índice
 
-* [Motivación](#motivacion)
-* [Objetivo del Juego ](#objetivo-del-juego)
-* [Remasterización](#remasterizacin)
-* [Tecnologías](#tecnologías)
+* [Motivación](#-motivacion)
+* [Objetivo del Juego ](#-objetivo-del-juego)
+* [Remasterización](#-remasterizacin)
+* [Tecnologías](#-tecnologías)
 
 ## 🚀 Motivación
 
