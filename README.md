@@ -44,5 +44,33 @@ Tareas Pendiente: Implementar algún ORM como spring-jpa-data, o spring-mongodb 
 Notas: Recuerde que cada vez que ejecute execute-2-configuracion.sh se pisaran los datos de las partidas que ya haya jugado.
 Nota2: Cada vez que quiera jugar el juego solo tiene que ejecutar execute-3-execute.sh
 
-
-
+## 🚀 Demo
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/1.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/2.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/3.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/4.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/5.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/6.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/7.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/8.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/9.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/10.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/11.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/12.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/13.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/14.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/15.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/16.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/17.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/18.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/19.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/20.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/21.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/22.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/23.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/24.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/25.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/26.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/27.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/28.png)
+!(https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/29.png)
