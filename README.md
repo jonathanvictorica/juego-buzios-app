@@ -48,17 +48,32 @@ Nota2: Cada vez que quiera jugar el juego solo tiene que ejecutar execute-3-exec
 ### Diagrama de Componentes
 
 ### Modelo de Base de Datos
+   En este diagrama se presentan las entidades más relevantes de la base de datos.
 ![Modelo de Base de Datos](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DER_m.png)
 
 ### Diagrama de Clases
   A continuación se presentan los diagramas de clases de los módulos principales de la app Buzios
 #### Módulo de Ciudades
+   El módulo principal del juego son las ciudades. Cuanto más ciudades tenga un jugador, más grande y poderoso
+es su imperio. Cuando comienza una partida, su ciudad inicial se convierte en la capital de su imperio. Para fundar
+nuevas ciudades (en el juego se denominan colonias), debe ampliar el nivel de su edificio Palacio. Gracias a las nuevas
+ciudades que vaya construyendo, en diferentes Islas del juego, podrá conseguir distintos recursos (madera, vino, mármol), que 
+le permitirá ejecutar diferentes acciones en el juego. Una ciudad tiene edificios, recursos, unidades militares (terrestres 
+   y marítimas). También tiene un Puerto comercial, que a través de sus barcos mercantes intercambia recursos entre sus colonias
+y ciudades de otros jugadores.
+
 ![Módulo de Ciudades](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DC_ciudad.png)
 #### Módulo de Edificios
+
+   Los edificios son una parte fundamental del juego. A medida que van creciendo y subiendo de nivel, permiten al jugador
+nuevas acciones. Para subir de nivel, es necesario contar con recursos en la ciudad (madera,mármol, cristal) y oro. 
+Conseguir estos recursos no es una tarea sencilla. Puede ser a través del Comercio con otros jugadores, comprando Ofertas
+en el Mercado de Intercambio, o saqueando una ciudad. 
+
 ![Módulo de Edificios](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DC_Edificio.png)
 #### Módulo de Investigaciones
 
-Nota: las investigaciones en el juego, desbloquean nuevas acciones a realizar. Por ejemplo construir edificios,
+  Las investigaciones en el juego, desbloquean nuevas acciones a realizar. Por ejemplo construir edificios,
 construir nuevas unidades militares, etc
 
 ![Módulo de Investigaciones](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DC_Investigacion.png)
