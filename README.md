@@ -45,6 +45,13 @@ Notas: Recuerde que cada vez que ejecute execute-2-configuracion.sh se pisaran l
 Nota2: Cada vez que quiera jugar el juego solo tiene que ejecutar execute-3-execute.sh
 
 ## 🚀 Demo
+
+![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DC_ciudad.png)
+![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DC_Edificio.png)
+![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DC_Investigacion.png)
+![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/DER_m.png)
+
+
 ![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/1.png)
 ![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/2.png)
 ![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/3.png)
@@ -74,3 +81,6 @@ Nota2: Cada vez que quiera jugar el juego solo tiene que ejecutar execute-3-exec
 ![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/27.png)
 ![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/28.png)
 ![Demo](https://github.com/jonathanvictorica/juego-buzios-app/blob/develop/docs/29.png)
+
+
+
